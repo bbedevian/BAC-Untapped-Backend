@@ -7,5 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
-
-User.create(name: "Brett", male: true, password: "123", weight: 195)
+UserBeer.destroy_all
