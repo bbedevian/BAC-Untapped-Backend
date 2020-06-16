@@ -12,8 +12,10 @@ class UsersController < ApplicationController
 
       def create 
         user = User.create(user_params)
-
+        if user.valid?
         render json: user, except: [:created_at, :updated_at]
+        else render json: {errors: user.errors.full_messages}
+        end 
       end
 
       # def user_by_id
