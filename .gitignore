@@ -29,4 +29,6 @@
 ./localhost.crt 
 ./localhost.key
 
+.env 
+
 
